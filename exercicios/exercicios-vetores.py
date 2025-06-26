@@ -117,7 +117,7 @@ elif(vetor_float[2] > maior_valor):
 elif(vetor_float[3] > maior_valor):
     maior_valor = vetor_float[3] 
 
-# print(f"O maior valor é {maior_valor}")
+print(f"O maior valor é {maior_valor}")
 
 # h) Apresenta na tela somente o índice do maior valor do vetor.
 indice_maior = 0
@@ -154,3 +154,26 @@ elif(vetor_float[2] < maior_valor):
 elif(vetor_float[3] < maior_valor):
     menor_valor = vetor_float[3]
 print(f"O menor valor é {maior_valor}")
+
+#5
+""" 
+Você foi contratado para criar um programa para uma loteria.
+A loteria tem apenas um tipo de jogo que sorteia 06 números inteiros e eles podem ser repetidos.
+Porém o intervalo de números para o sorteio é de 1 a 15. Por exemplo:
+Sorteio A: 9 - 2 - 14 - 9 - 5 - 12
+Sorteio B: 12 - 12 - 1 - 13 - 7 - 8 - 9
+Crie um programa para a loteria sortear seis números inteiros e armazenar em um vetor. 
+"""
+import random
+
+n = random.randint(1,15)
+numeros_sorteados = [0] * 6
+
+numeros_sorteados[0] = random.randint(1,15)
+numeros_sorteados[1] = random.randint(1,15)
+numeros_sorteados[2] = random.randint(1,15)
+numeros_sorteados[3] = random.randint(1,15)
+numeros_sorteados[4] = random.randint(1,15)
+numeros_sorteados[5] = random.randint(1,15)
+
+print(f"Sorteio A: {numeros_sorteados[0]} - {numeros_sorteados[1]} - {numeros_sorteados[1]} - {numeros_sorteados[2]} - {numeros_sorteados[3]} - {numeros_sorteados[4]} - {numeros_sorteados[5]}")
