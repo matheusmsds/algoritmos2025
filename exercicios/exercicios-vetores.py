@@ -172,3 +172,56 @@ numeros_sorteados = [random.randint(1,15), random.randint(1,15),random.randint(1
 
 
 print(f"Sorteio A: {numeros_sorteados[0]} - {numeros_sorteados[1]} - {numeros_sorteados[1]} - {numeros_sorteados[2]} - {numeros_sorteados[3]} - {numeros_sorteados[4]} - {numeros_sorteados[5]}")
+
+""" 
+A loteria expandiu seus jogos e agora criou uma nova modalidade, 
+que sorteia 05 números de 1 a 4 e o jogador deve acertar quantas vezes um determinado número foi repetido. Por exemplo:
+Sorteio A: 1 - 4 - 2 - 1 - 3
+
+Ocorrências:
+1 - 2 vezes
+2 - 1 vez
+3 - 1 vez
+4 - 1 vez
+
+O jogador deve informar duas coisas: primeiro um número entre 1 e 4 e depois quantas vezes esse número foi repetido. Por exemplo:
+
+Jogador 1					Jogador 2
+Número escolhido: 2			Número escolhido: 1
+Repetições: 2				Repetições: 2
+Resultado: Jogador perdeu		Resultado: Jogador venceu
+
+Faça um programa que sorteie 5 números entre 1 e 4 e armazene em um vetor. 
+Em seguida, pergunte ao usuário o número escolhido e a quantidade de repetições do número escolhido. 
+Por fim, informe na tela os números sorteados e se o jogador venceu ou perdeu.
+ """
+import random
+
+sorteio = [0] * 5
+sorteio = [random.randint(1,4), random.randint(1,4),random.randint(1,4),random.randint(1,4),random.randint(1,4)]
+
+numero_escolhido = int(input("Digite um número entre 1 a 4: "))
+rep_informadas = int(input("Quantas vezes esse número foi repetido: "))
+
+status = ""
+contador = 0
+
+if(sorteio[0] == numero_escolhido):
+    contador += 1
+if(sorteio[1] == numero_escolhido):
+    contador += 1
+if(sorteio[2] == numero_escolhido):
+    contador += 1
+if(sorteio[3] == numero_escolhido):
+    contador += 1
+if(sorteio[4] == numero_escolhido):
+    contador += 1
+
+print(f"Sorteio A: {sorteio[0]} - {sorteio[1]} - {sorteio[2]} - {sorteio[3]} - {sorteio[4]}")
+
+if(contador == rep_informadas):
+    status = "Jogador Venceu"
+else:
+    status = "Jogador Perdeu"
+
+print(f"Número escolhido: {numero_escolhido}\nRepetições: {contador}\nResultado: {status}")
