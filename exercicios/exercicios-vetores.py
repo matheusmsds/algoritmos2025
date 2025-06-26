@@ -86,96 +86,110 @@ vetor_str[3] = input("E-mail: ")
 
 print(f"Nome completo:\t{vetor_str[0]}\nEndereço:\t{vetor_str[1]}\nTelefone:\t{vetor_str[2]}\nEmail:\t{vetor_str[3]}")
 
+# 4) Crie um vetor com 4 números decimais (ponto-flutuante) de modo que o usuário do programa vá digitar esses valores.
 vetor_float = [0.0] * 4
-# Crie um vetor com 4 números decimais (ponto-flutuante) de modo que o usuário do programa vá digitar esses valores.
+
 vetor_float[0] = float(input("Digite um número ponto flutuante: "))
 vetor_float[1] = float(input("Digite um número ponto flutuante: "))
 vetor_float[2] = float(input("Digite um número ponto flutuante: "))
 vetor_float[3] = float(input("Digite um número ponto flutuante: "))
+
 # a) Apresente na tela a soma de todos os valores.
-soma = vetor_float[0] + vetor_float[1] + vetor_float[2] + vetor_float[3]
-print(f"A soma dos valores é: {soma}")
+soma = (vetor_float[0] + vetor_float[1] + vetor_float[2] + vetor_float[3])
+print(f"\na) A soma dos valores é: {soma}")
+
 # b) Apresente na tela a média de todos os valores.
-soma = vetor_float[0] + vetor_float[1] + vetor_float[2] + vetor_float[3]
-print(f"A média entre os valores é: {soma / 5}")
+media = (soma / 4)
+print(f"b) A média entre os valores é: {media}")
+
 # c) Apresente na tela o produto (multiplicação) de todos os valores.
-produto = vetor_float[0] * vetor_float[1] * vetor_float[2] * vetor_float[3]
-print(f"O produdo dos valores é: {produto}")
+produto = (vetor_float[0] * vetor_float[1] * vetor_float[2] * vetor_float[3])
+print(f"c) O produto dos valores é: {produto}")
+
 # d) Apresente na tela somente quantos valores são maiores do que 1000.
-if(vetor_float[0] > 1000):
-    print(vetor_float[0])
-elif(vetor_float[1] > 1000):
-    print(vetor_float[1])    
-elif(vetor_float[2] > 1000):
-    print(vetor_float[2])    
-elif(vetor_float[3] > 1000):
-    print(vetor_float[3])
-# # e) Apresente na tela a quantidade de valores que são maiores do que zero.
-if(vetor_float[0] > 0):
-    print(vetor_float[0])
-elif(vetor_float[1] > 0):
-    print(vetor_float[1])    
-elif(vetor_float[2] > 0):
-    print(vetor_float[2])    
-elif(vetor_float[3] > 0):
-    print(vetor_float[3])
-# # f) Apresente na tela quantos valores são pares.
+maior_1000 = 0
+if (vetor_float[0] > 1000):
+    maior_1000 += 1
+if (vetor_float[1] > 1000):
+    maior_1000 += 1
+if (vetor_float[2] > 1000):
+    maior_1000 += 1
+if (vetor_float[3] > 1000):
+    maior_1000 += 1
+print(f"d) Quantidade de valores maiores que 1000: {maior_1000}")
 
-if(vetor_float[0] % 2 == 0):
-    print(vetor_float[0])
-elif(vetor_float[1] % 2 == 0):
-    print(vetor_float[1])    
-elif(vetor_float[2] % 2 == 0):
-    print(vetor_float[2])    
-elif(vetor_float[3] % 2 == 0):
-    print(vetor_float[3])
+# e) Apresente na tela a quantidade de valores que são maiores do que zero.
+maior_que_zero = 0
+if (vetor_float[0] > 0):
+    maior_que_zero += 1
+if (vetor_float[1] > 0):
+    maior_que_zero += 1
+if (vetor_float[2] > 0):
+    maior_que_zero += 1
+if (vetor_float[3] > 0):
+    maior_que_zero += 1
+print(f"e) Quantidade de valores maiores que zero: {maior_que_zero}")
 
-# # g) Apresente na tela somente o maior valor do vetor.
+# f) Apresente na tela quantos valores são pares (números inteiros divisíveis por 2).
+pares = 0
+if ((vetor_float[0] % 2 == 0) and (vetor_float[0] == int(vetor_float[0]))):
+    pares += 1
+if ((vetor_float[1] % 2 == 0) and (vetor_float[1] == int(vetor_float[1]))):
+    pares += 1
+if ((vetor_float[2] % 2 == 0) and (vetor_float[2] == int(vetor_float[2]))):
+    pares += 1
+if ((vetor_float[3] % 2 == 0) and (vetor_float[3] == int(vetor_float[3]))):
+    pares += 1
+print(f"f) Quantidade de valores pares: {pares}")
+
+# g) Apresente na tela somente o maior valor do vetor.
 maior_valor = vetor_float[0]
-if(vetor_float[1] > maior_valor):
-   maior_valor = vetor_float[1]
-elif(vetor_float[2] > maior_valor):
-    maior_valor = vetor_float[2]    
-elif(vetor_float[3] > maior_valor):
-    maior_valor = vetor_float[3] 
-
-print(f"O maior valor é {maior_valor}")
+if (vetor_float[1] > maior_valor):
+    maior_valor = vetor_float[1]
+if (vetor_float[2] > maior_valor):
+    maior_valor = vetor_float[2]
+if (vetor_float[3] > maior_valor):
+    maior_valor = vetor_float[3]
+print(f"g) O maior valor é: {maior_valor}")
 
 # h) Apresenta na tela somente o índice do maior valor do vetor.
 indice_maior = 0
 maior_valor = vetor_float[0]
-if(vetor_float[1] > maior_valor):
-   maior_valor = vetor_float[1]
-   indice_maior = 1
-elif(vetor_float[2] > maior_valor):
+if (vetor_float[1] > maior_valor):
+    maior_valor = vetor_float[1]
+    indice_maior = 1
+if (vetor_float[2] > maior_valor):
     maior_valor = vetor_float[2]
-    indice_maior = 1
-
-elif(vetor_float[3] > maior_valor):
+    indice_maior = 2
+if (vetor_float[3] > maior_valor):
     maior_valor = vetor_float[3]
-    indice_maior = 1
-
-print(f"O indice do maior valor é {indice_maiorr}")
+    indice_maior = 3
+print(f"h) O índice do maior valor é: {indice_maior}")
 
 # i) Apresente na tela somente o menor valor do vetor.
-
-menor_valor  = vetor_float[0]
-if(vetor_float[1] > menor_valor):
-   menor_valor = vetor_float[1]
-elif(vetor_float[2] > menor_valor):
-    menor_valor = vetor_float[2]
-elif(vetor_float[3] > maior_valor):
-    maior_valor = vetor_float[3]
-print(f"O menor valor é {menor_valor}")
-# j) Apresenta na tela somente o índice do menor valor do vetor.
 menor_valor = vetor_float[0]
-if(vetor_float[1] < maior_valor):
-   menor_valor = vetor_float[1]
-elif(vetor_float[2] < maior_valor):
-    menor_valor = vetor_float[2]    
-elif(vetor_float[3] < maior_valor):
+if (vetor_float[1] < menor_valor):
+    menor_valor = vetor_float[1]
+if (vetor_float[2] < menor_valor):
+    menor_valor = vetor_float[2]
+if (vetor_float[3] < menor_valor):
     menor_valor = vetor_float[3]
-print(f"O menor valor é {maior_valor}")
+print(f"i) O menor valor é: {menor_valor}")
+
+# j) Apresenta na tela somente o índice do menor valor do vetor.
+indice_menor = 0
+menor_valor = vetor_float[0]
+if (vetor_float[1] < menor_valor):
+    menor_valor = vetor_float[1]
+    indice_menor = 1
+if (vetor_float[2] < menor_valor):
+    menor_valor = vetor_float[2]
+    indice_menor = 2
+if (vetor_float[3] < menor_valor):
+    menor_valor = vetor_float[3]
+    indice_menor = 3
+print(f"j) O índice do menor valor é: {indice_menor}")
+
 
 #5
 """ 
