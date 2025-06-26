@@ -17,30 +17,52 @@ vetor[4] = int(input())
 
 # 2)
 # Considerando o vetor criado no exercício 1.d:
+vetor = [0] * 5
+
+
+print("Digite 5 números inteiros:")
+
+vetor[0] = int(input("Digite o 1º número: "))
+vetor[1] = int(input("Digite o 2º número: "))
+vetor[2] = int(input("Digite o 3º número: "))
+vetor[3] = int(input("Digite o 4º número: "))
+vetor[4] = int(input("Digite o 5º número: "))
+
+
 # a) Apresente na tela todos os valores do vetor.
+print("\n--- a) Valores na ordem original ---")
 print(vetor[0])
 print(vetor[1])
 print(vetor[2]) 
 print(vetor[3])
 print(vetor[4])
+
+
 # b) Apresente na tela todos os valores do vetor em ordem invertida (de trás para frente).
+print("\n--- b) Valores em ordem invertida ---")
 print(vetor[4])
 print(vetor[3])
 print(vetor[2]) 
 print(vetor[1])
 print(vetor[0])
+
+
 # c) Apresente na tela o dobro de todos os valores do vetor.
-print(vetor[4] * 2)
-print(vetor[3] * 2)
-print(vetor[2] * 2) 
-print(vetor[1] * 2)
+print("\n--- c) Dobro de cada valor ---")
 print(vetor[0] * 2)
+print(vetor[1] * 2)
+print(vetor[2] * 2) 
+print(vetor[3] * 2)
+print(vetor[4] * 2)
+
 # d) Apresente na tela a metade de todos os valores do vetor.
-print(vetor[4] / 2)
-print(vetor[3] / 2)
-print(vetor[2] / 2) 
-print(vetor[1] / 2)
+print("\n--- d) Metade de cada valor ---")
 print(vetor[0] / 2)
+print(vetor[1] / 2)
+print(vetor[2] / 2) 
+print(vetor[3] / 2)
+print(vetor[4] / 2)
+
 
 #3
 """
