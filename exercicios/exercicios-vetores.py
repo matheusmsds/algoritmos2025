@@ -168,12 +168,7 @@ import random
 
 n = random.randint(1,15)
 numeros_sorteados = [0] * 6
+numeros_sorteados = [random.randint(1,15), random.randint(1,15),random.randint(1,15),random.randint(1,15),random.randint(1,15),random.randint(1,15)]
 
-numeros_sorteados[0] = random.randint(1,15)
-numeros_sorteados[1] = random.randint(1,15)
-numeros_sorteados[2] = random.randint(1,15)
-numeros_sorteados[3] = random.randint(1,15)
-numeros_sorteados[4] = random.randint(1,15)
-numeros_sorteados[5] = random.randint(1,15)
 
 print(f"Sorteio A: {numeros_sorteados[0]} - {numeros_sorteados[1]} - {numeros_sorteados[1]} - {numeros_sorteados[2]} - {numeros_sorteados[3]} - {numeros_sorteados[4]} - {numeros_sorteados[5]}")
