@@ -75,3 +75,29 @@
 #     print(f"{numeros[i]}")
 
 #5) Para os exercícios abaixo, utilize o vetor criado no exercício anterior.
+#tamanho = int(input("Informe o tamanho do vetor: "))
+#numeros = [0] * tamanho
+
+#A) Apresente os números do vetor em ordem inversa.
+# for i in range(0, len(numeros)):
+#     numeros[i] = int(input(f"Informe o {i + 1}º: "))
+# for i in range(len(numeros) -1, -1, -1):
+#     print(f"{numeros[i]}")
+
+#B) Apresente a soma de todos os elementos.
+# for i in range(0, len(numeros)):
+#     numeros[i] = int(input(f"Informe o {i + 1}º: "))
+# soma = 0
+# for i in range(0, len(numeros)):
+#     soma += numeros[i]
+# print(f"Soma: {soma}")
+
+#C) Calcule a média aritmética dos valores.
+# for i in range(0, len(numeros)):
+#     numeros[i] = int(input(f"Informe o {i + 1}º: "))
+# soma = 0
+# for i in range(0, len(numeros)):
+#     soma += numeros[i]
+# print(f"Média: {soma/len(numeros)}")
+
+#D) Liste na tela somente os números do vetor que estão em posições (índices) pares.
