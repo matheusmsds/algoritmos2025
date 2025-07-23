@@ -41,14 +41,15 @@
 #Faça um programa para armazenar 6 números inteiros para uma loteria, 
 #permitindo que o usuário informe os números. Depois de preencher, informe uma mensagem e os
 #números sorteados.
+# import random
 # n = [0] * 6
 
 # for i in range(0, len(n)):
 #     n[i] = int(input(f"Informe o {i + 1}º: "))
 
-# print("Sorteio: ")
+# print("Números Sorteados: ")
 # for i in range(0, len(n)):
-#     print(f"{n[i]}")
+#     print(f"{random.choice(n)}")
 
 #3)
 # Um professor precisa armazenar em uma lista os nomes dos alunos presentes em um minicurso. 
