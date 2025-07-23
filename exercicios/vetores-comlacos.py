@@ -101,3 +101,8 @@
 # print(f"Média: {soma/len(numeros)}")
 
 #D) Liste na tela somente os números do vetor que estão em posições (índices) pares.
+# for i in range(0, len(numeros)):
+#     numeros[i] = int(input(f"Informe o {i + 1}º: "))
+# for i in range(0, len(numeros)):
+#     if(numeros[i] % 2 == 0):
+#         print(f"{numeros[i]}")
