@@ -106,3 +106,87 @@
 # for i in range(0, len(numeros)):
 #     if(numeros[i] % 2 == 0):
 #         print(f"{numeros[i]}")
+
+#E)
+# Determinar um segmento informado pelo usuário (posição inicial e final) para apresentar os números na tela. 
+#Por exemplo: 
+# Na sequência [5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1] o usuário teria que informar 4 (na posição inicial) e 8 
+#(posição final) para mostrar na tela somente:  3, 14, 10, -3, 9.
+
+# numeros = [5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1]
+# pos_inicial = int(input("Informe um indice inicial: "))
+# pos_final = int(input("Informe um indice final: "))
+
+# for i in range(pos_inicial, pos_final + 1):
+#     print(numeros[i])
+
+#F)
+# Semelhante ao anterior, porém deve-se fazer a soma dos valores contidos no vetor conforme a posição e inicial informada. Exemplo: 
+# Na sequência [5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1] , o usuário teria que informar 4 (na posição inicial) e 8 (posição final) 
+#para realizar a soma do segmento destacado 
+# numeros = [5, 2, -2, -7, 3, 14, 10, -3, 9, -6, 4, 1]
+# pos_inicial = int(input("Informe um indice inicial: "))
+# pos_final = int(input("Informe um indice final: "))
+
+# soma = 0
+# for i in range(pos_inicial, pos_final + 1):
+#     soma += numeros[i]
+# print(soma)
+
+#G) Encontre qual é o maior e o menor número desta lista.
+# tamanho = int(input("Informe o tamanho do vetor: "))
+# numeros = [0] * tamanho
+
+# for i in range(0, len(numeros)):
+#     numeros[i] = int(input(f"Informe o {i + 1}º: "))
+
+# for i in range(0, len(numeros)):
+#     if(i == 0):
+#         maior = numeros[i]
+#         menor = numeros[i]
+
+#     if(numeros[i] > maior):
+#         maior = numeros[i]
+#     if(numeros[i] < menor):
+#         menor = numeros[i]
+
+# print(f"\nMaior indice: {maior}\nMenor indice: {menor}")
+
+#H) Encontre qual é o maior e o menor número desta lista. Além disso, informe quais são os índices (posições) deles.
+# tamanho = int(input("Informe o tamanho do vetor: "))
+# numeros = [0] * tamanho
+
+# for i in range(0, len(numeros)):
+#     numeros[i] = int(input(f"Informe o {i + 1}º: "))
+
+# for i in range(0, len(numeros)):
+#     if(i == 0):
+#         maior = numeros[i]
+#         menor = numeros[i]
+#         indice_maior = i
+#         indice_menor = i
+        
+#     if(numeros[i] > maior):
+#         maior = numeros[i]
+#         indice_maior = i
+#     if(numeros[i] < menor):
+#         menor = numeros[i]
+#         indice_menor = i
+
+# print(f"\nMaior numero: {maior} indice {indice_maior}\nMenor indice: {menor} indice {indice_menor}")
+
+#I) Informe quantos números pares e ímpares foram digitados (apenas a quantidade de cada).
+# tamanho = int(input("Informe o tamanho do vetor: "))
+# numeros = [0] * tamanho
+
+# pares = 0
+# impares = 0
+
+# for i in range(0, len(numeros)):
+#     numeros[i] = int(input(f"Informe o {i + 1}º: "))
+# for i in range(0, len(numeros)):
+#     if(numeros[i] % 2 == 0):
+#         pares += 1
+#     if(numeros[i] % 2 == 1):
+#         impares += 1
+# print(f"pares: {pares}\nimpares: {impares}")
