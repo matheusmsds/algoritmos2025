@@ -190,3 +190,26 @@
 #     if(numeros[i] % 2 == 1):
 #         impares += 1
 # print(f"pares: {pares}\nimpares: {impares}")
+
+#6) Crie um vetor para armazenar alguns números que serão utilizados no cálculo da tabuada.
+# tamanho = int(input("Informe o tamanho do vetor: "))
+# numeros = [0] * tamanho
+
+# A) Apresente todos os números informados e seu respectivo dobro.
+# for i in range(0, len(numeros)):
+#     numeros[i] = int(input(f"Informe o {i + 1}º: "))
+# print("Números: ")
+# for i in range(0, len(numeros)):
+#     print(f"{numeros[i]}")
+# print("Dobro deles: ")
+# for i in range(0, len(numeros)):
+#     print(f"{numeros[i] * 2}")
+
+#B) Para cada número presente no vetor, faça a tabuada do 1 ao 10 para ele (utilizando laço de repetição você vai 
+#criar uma tabuada para cada valor do vetor).
+# for i in range(0, len(numeros)):
+#     numeros[i] = int(input(f"Informe o {i + 1}º: "))
+# for i in range(0, len(numeros)):
+#     numero = numeros[i]
+#     for j in range(1, 11):
+#         print(f"{numero} x {j} = {numero * j}")
