@@ -429,7 +429,7 @@
 # print(f"Vice-campeão: {nomes[vice_idx]} com {pontos[vice_idx]} pontos")
 
 """
-16)
+17)
 # Uma empresa de pesquisas precisa tabular os resultados da seguinte enquete feita a um grande quantidade de organizações:
 # 	"Qual o melhor Sistema Operacional para uso em servidores?"
 
