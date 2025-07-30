@@ -427,3 +427,75 @@
 
 # print(f"\nCampeão: {nomes[campeao_idx]} com {pontos[campeao_idx]} pontos")
 # print(f"Vice-campeão: {nomes[vice_idx]} com {pontos[vice_idx]} pontos")
+
+"""
+16)
+# Uma empresa de pesquisas precisa tabular os resultados da seguinte enquete feita a um grande quantidade de organizações:
+# 	"Qual o melhor Sistema Operacional para uso em servidores?"
+
+# 1- Windows Server
+# 2- Linux
+# 3- MacOS
+# 4- Android
+# 5- iOS
+# 6- Outro
+
+# Você foi contratado para desenvolver um programa que leia o resultado da enquete e informe ao final o resultado da mesma. A contagem dos votos deve ser armazenada
+#  em um vetor (cada posição guarda a contagem de uma opção). 
+# O programa deverá ler os valores até ser informado o valor 0, que encerra a entrada dos dados. Não deverão ser aceitos valores além dos válidos para o programa (0 a 6).
+# Após os dados terem sido completamente informados, o programa deverá calcular a percentual de cada um dos concorrentes e informar o vencedor da enquete. 
+# O formato da saída foi dado pela empresa, e é o seguinte:
+# """
+
+# print("Enquete: Qual o melhor Sistema Operacional para uso em servidores?")
+# print("1- Windows Server")
+# print("2- Linux")
+# print("3- MacOS")
+# print("4- Android")
+# print("5- iOS")
+# print("6- Outro")
+# print("Digite 0 para encerrar a votação.\n")
+
+
+# sistemas = [0] * 6
+# total_votos = 0
+
+# while (True):
+#         voto = int(input("Digite seu voto (1-6) ou 0 para encerrar: "))
+#         if (voto == 0):
+#             break
+#         elif(1 <= voto and voto <= 6):
+#             sistemas[voto - 1] += 1
+#             total_votos += 1
+#         else:
+#             print("Voto inválido! Digite um número entre 1 e 6 ou 0 para encerrar.")
+
+# if (total_votos == 0):
+#     print("\nNenhum voto registrado.")
+# else:
+#     # Lista com nomes para exibir junto
+#     opcoes = [
+#         "Windows Server",
+#         "Linux",
+#         "MacOS",
+#         "Android",
+#         "iOS",
+#         "Outro"
+#     ]
+
+#     print("\nResultado da enquete:")
+#     print("Sistema Operacional    Votos   %")
+
+# for i in range(0, 6):
+#     percentual = (sistemas[i] / total_votos) * 100
+#     print(f"{opcoes[i]:<22} {sistemas[i]:<6} {percentual:5.2f}%")
+
+# max_votos = 0
+# indice_maior = 0
+# for i in range(1,6):
+#     if(sistemas[i] > max_votos):
+#         max_votos = sistemas[i]
+#         indice_vencedor = i
+
+
+# print(f"\nO vencedor da enquete foi {opcoes[indice_vencedor]} com {max_votos} votos, correspondendo a { (max_votos / total_votos)*100 :.2f}% dos votos.")
