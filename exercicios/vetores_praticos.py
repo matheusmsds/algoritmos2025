@@ -109,6 +109,7 @@ print(f"\nTotal de vendas: {soma}")
 media = soma / len(vendasMinuto)
 print(f"Média das vendas: {media}")
 # O maior pico de vendas (maior valor do vetor) e o minuto exato em que ocorreu (índice).
+
 for i in range(0, len(vendasMinuto)):
     if(i == 0):
         maior = vendasMinuto[i]
@@ -117,16 +118,22 @@ for i in range(0, len(vendasMinuto)):
         maior = vendasMinuto[i]
         indice = i
 print(f"\nA maior venda: {maior}\nMinuto da venda: {indice}")
-# O trecho de 10 minutos consecutivos com o maior volume total de vendas (mostre o intervalo de índices e a soma correspondente).
-for i in range(0, len(vendasMinuto)):
-    if(i == 0):
-        maior_volume = vendasMinuto[i]
-        total = i
-        intervalo = i
-    if(vendasMinuto[i] > maior_volume):
-        maior_volume = vendasMinuto[i]
-        total += vendasMinuto[i]
-        intervalo = i
 
-print(f"\nMaior volume total de vendas: {total}\n Intervalo de indices: {intervalo}")
+# O trecho de 10 minutos consecutivos com o maior volume total de vendas (mostre o intervalo de índices e a soma correspondente).
+maior_volume = 0
+intervalo_inicio = 0
+for i in range(0, len(vendasMinuto) - 9):  # Garantindo que o intervalo de 10 minutos não ultrapasse o limite
+    total = 0
+    # Soma dos valores de 10 minutos consecutivos
+    for j in range(i, i + 10):
+        total += vendasMinuto[j]
+    # Verifica se o total da soma dos 10 minutos é maior que o maior volume registrado
+    if (total > maior_volume):
+        maior_volume = total
+        inicio_intervalo = i
+
+# Exibindo o intervalo e a soma
+print(f"\nMaior volume total de vendas em 10 minutos: {maior_volume}")
+print(f"Intervalo de índices: {intervalo_inicio + 1}")
+
     
