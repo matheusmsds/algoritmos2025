@@ -19,4 +19,5 @@ def encontrarMenor(vetor):
             menor = vetor[i]
         if(vetor[i] < menor):
             menor = vetor[i]
-    print(f"O maior valor do vetor é: {menor}")
+
+    print(f"O menor valor do vetor é: {menor}")
