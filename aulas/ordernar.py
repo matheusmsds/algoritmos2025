@@ -22,12 +22,12 @@ for i in range(0, len(array) - 1):
 
 array = [32,9,12,3,68,27,15]
 def bubble(vetor):
-    for i in range(0, len(vetor) - 1):
-        for j in range(0,len(vetor) - 1):
-            if(vetor[j] > vetor[j+1]):
-                aux = vetor[j]
-                vetor[j] = vetor[j+1]
-                vetor[j+1] = aux
+    for ciclo in range(0, len(vetor) - 1):
+        for i in range(0,len(vetor) - 1):
+            if(vetor[i] > vetor[i+1]):
+                aux = vetor[i]
+                vetor[i] = vetor[i+1]
+                vetor[i+1] = aux
     return vetor
 
 print(bubble(array))
