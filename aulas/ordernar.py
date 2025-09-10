@@ -1,4 +1,6 @@
-array = [32, 9, 12, 3, 68, 27,15]
+array = [0] * 8
+for i in range(0, len(array)):
+    array[i] = random.randint(0, 100)
 
 for i in range(0, len(array) - 1):
     for j in range(0, len(array) - 1):
