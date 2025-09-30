@@ -35,11 +35,11 @@ def selection_sort(array):
 def busca_sequencial(array, valor):
     indice = None
     for i in range(len(array)):
-        if valor == array[i]:
+        if(valor == array[i]):
             indice = i
             break
 
-    if indice is None:
+    if(indice is None):
         return -1
     else:
         return indice
@@ -55,15 +55,15 @@ def busca_binaria(array, valor):
     while inicio <= fim:
         meio = (inicio + fim) // 2
 
-        if array[meio] == valor:
+        if(array[meio] == valor):
             indice = meio
             break
-        elif array[meio] > valor:
+        elif(array[meio] > valor):
             fim = meio - 1
         else:
             inicio = meio + 1
 
-    if indice is None:
+    if(indice is None):
         return -1
     else:
         return indice
@@ -76,3 +76,4 @@ def criar_vetor(tam, variacao_x, variacao_y):
     
 
     return vetor
+
