@@ -1,0 +1,4 @@
+Joãozinho,8.5
+Mariazinha,9.0
+Pedrinho,7.2
+Chiquinha,10.0
