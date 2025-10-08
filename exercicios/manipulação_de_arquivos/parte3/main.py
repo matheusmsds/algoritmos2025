@@ -1,5 +1,4 @@
 arquivo = open("notas.txt", "r", encoding="utf8")
-
 linhas = arquivo.readlines()
 
 media = 0
@@ -18,12 +17,16 @@ for i in range(0, len(linhas)):
     if(a[1] < menor_nota):
         menor_nota = a[1]
         n_menornota = a[0]
-    media += a[1] / len(linhas)
+    if(a[1] < 8.0):
+        print(f"{a[0]} Tirou menos que 8.0")
+    media += (a[1] / len(linhas))
 
+print("---- Notas ----\n")
 print(f"Maior Nota\nNome:{n_maiornota}\nNota: {maior_nota}")
 print("\n--------\n")
 print(f"Menor Nota\nNome:{n_menornota}\nNota: {menor_nota}")
 print("\n--------\n")
 print("Média Notas")
 print(f"média: {media:.2f}")
+
 arquivo.close()
