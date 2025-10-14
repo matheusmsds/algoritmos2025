@@ -27,8 +27,8 @@ def selection_sort(array):
                 menor_valor = array[j]
                 imenor = j
 
-                array[imenor] = array[i]
-                array[i] = menor_valor
+        array[imenor] = array[i]
+        array[i] = menor_valor
             
     return array
 
@@ -74,6 +74,5 @@ def criar_vetor(tam, variacao_x, variacao_y):
     for i in range(0, tam):
         vetor[i] = random.random(variacao_x, variacao_y)
     
-
     return vetor
 
