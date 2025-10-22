@@ -1,5 +1,0 @@
-Carlos,25.50
-Ana,50.00
-Lucas,18.75
-Carlos,10.00
-Ana,5.25
